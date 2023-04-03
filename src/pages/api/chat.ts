@@ -40,7 +40,7 @@ export interface ErrorResponse {
     error?: Error;
 }
 
-const OPENAI_API_KEY = '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'
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY
 
 export default async function handler(
   req: NextApiRequest,
